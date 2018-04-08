@@ -13,7 +13,8 @@
 ##### 2、Clone the repo to your local development environment.
 ##### 3、Commit your own commits and push to your own remote repo.
 ##### 4、Create pull request.
-![image](http://note.youdao.com/favicon.ico)
+![image](https://raw.githubusercontent.com/zjs1224522500/files-and-images/master/images/how%20to%20push%20your%20own%20code%20to%20others'%20repo/pull%20request.png)
+![image](https://raw.githubusercontent.com/zjs1224522500/files-and-images/master/images/how%20to%20push%20your%20own%20code%20to%20others'%20repo/create%20pull%20request.png)
 
 ## How to sync repo
 - You can follow this [Sync your repo](https://www.zhihu.com/question/28676261)
