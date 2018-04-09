@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IO1/IO.iml" filepath="$PROJECT_DIR$/IO1/IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO2/IO2.iml" filepath="$PROJECT_DIR$/IO2/IO2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO3/IO3.iml" filepath="$PROJECT_DIR$/IO3/IO3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProject.iml" filepath="$PROJECT_DIR$/IdeaProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first/first.iml" filepath="$PROJECT_DIR$/first/first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/message/message.iml" filepath="$PROJECT_DIR$/message/message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modl/modl.iml" filepath="$PROJECT_DIR$/modl/modl.iml" />
+    </modules>
+  </component>
+</project>
