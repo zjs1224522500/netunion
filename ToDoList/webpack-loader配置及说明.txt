@@ -1,0 +1,76 @@
+npm i webpack vue vue-loader
+vue-loader@14.2.2  的依赖：
+		 css-loader
+		vue-template-compiler@^2.0.0
+		安装：
+		npm i css-loader vue-template-compiler
+npm i style-loader url-loader file-loader       <<<  文件 loader、 style loader url loader 安装
+	+ url-loader@1.0.1
+	+ file-loader@1.1.11
+	+ style-loader@0.20.3
+	added 4 packages in 10.138s
+
+>>> 安装 stylus-loader stylus
+	命令：npm i stylus-loader stylus 
+
++ stylus-loader@3.0.2
++ stylus@0.54.5
+added 9 packages in 10.942s
+------------------------------------------------------
+npm i webpack-dev-server       <<<  webpack-dev-server 的安装
+
++ webpack-dev-server@3.1.3
+added 143 packages in 24.197s     
+
+>>>> npm run dev   << 使用这个命令开启服务    localhost:8000
+------------------------------------------------------
+npm i cross-env       <<<  cross-env    的安装
++ cross-env@5.1.4
+added 2 packages in 12.328s
+--------------------------------------------
+npm i html-webpack-plugin       <<<< 一个 关于 html 的组件
++ html-webpack-plugin@3.2.0
+added 37 packages in 14.488s
+--------------------------------------------
+npm i postcss-loader autoprefixer babel-loader babel-core      << 
++ postcss-loader@2.1.3
++ babel-loader@7.1.4
++ autoprefixer@8.2.0
++ babel-core@6.26.0
+
+--------------------------------------------
+npm i babel-preset-env babel-plugin-transform-vue-jsx   <<   配置vue的jsx写法以及postcss
+	依赖：
+		npm i babel-helper-vue-jsx-merge-props babel-plugin-syntax-jsx
+
+
+--------------------------------------------
+npm i extract-text-webpack-plugin       <<  css优化所需的工具
+	！！：此版本不能对应 webpack@4
+应该使用：npm install --save-dev extract-text-webpack-plugin@next
+
+	+ extract-text-webpack-plugin@3.0.2
+added 5 packages in 18.689s
+
+
+>>> 安装npm install --save-dev extract-text-webpack-plugin@next 依然不能使用，遂将其卸载：npm uninstall extract-text-webpack-plugin
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"       << < 配置这一行      npm run build
+  },
