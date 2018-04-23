@@ -1,5 +1,2 @@
-# PCDIY
-DIY PC 
 
-ͼʾ���£�
-
+演示地址：https://nixinyudada.github.io/
