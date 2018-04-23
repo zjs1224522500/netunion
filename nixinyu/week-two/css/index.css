@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    padding-top:50px;
+}
+.CD,.CPU,.fan,.panel,.power,.RAM,.HDD,.videoC,.SSD{
+    border:1px solid #000;
+    text-align: center;
+    font-size:1px;
+
+}
+.rightBox{
+    width:600px;
+    height:600px;
+    float: right;
+    /*border:1px solid #000;*/
+}
+.PC{
+    width:450px;
+    height:400px;
+    border:1px solid #000000;
+    margin: 40px auto;
+    position: relative;
+    border-color: #228fbd;box-shadow: 0px 0px 4px #228fbd;
+}
+h2{
+    margin-bottom:10px;
+    text-indent: 2em;
+}
+hr{
+    width:80%;
+    margin:0 auto;
+}
+.CPU{
+    width:40px;
+    height:40px;
+    position: absolute;
+    top:195px;
+    left:135px;
+    /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.power{
+    width:100px;
+    height:70px;
+    position: absolute;
+    top: 10px;
+    left:20px;
+}
+.RAM{
+    width:10px;
+    height:150px;
+    position: absolute;
+    top:135px;
+    left:225px;
+}
+.fan{
+    width:90px;
+    height:110px;
+    position: absolute;
+    top:150px;
+    left:90px;
+}
+.panel{
+    width:240px;
+    height:270px;
+    position: absolute;
+    top:95px;
+    left:20px;
+}
+.HDD{
+    width:50px;
+    height:105px;
+    position: absolute;
+    bottom:5px;
+    right:5px;
+}
+.SSD{
+    width:15px;
+    height:105px;
+    position: absolute;
+    bottom:5px;
+    right:65px;
+}
+.CD{
+    width:140px;
+    height:40px;
+    position: absolute;
+    top:55px;
+    right:5px;
+}
+.videoC{
+    width:145px;
+    height:35px;
+    position: absolute;
+    top:300px;
+    left:55px;
+}
+.declare{
+    width: 150px;
+    height: 200px;
+    float: left;
+    /*border:1px solid #000;*/
+    padding:60px 0 0 30px;
+}
+.product{
+    width: 300px;
+    height: 500px;
+    /*border:1px solid #000;*/
+    float: left;
+    margin-left:40px;
+}
+ul li{
+    list-style-type: none;
+}
+li i{
+    display: inline-block;
+    width:70px;
+}
+.cpucolor1{color:#d64f44;}
+.powercolor1{color:#843900;}
+.RAMcolor1{color:#769149;}
+.fancolor1{color:#8552a1;}
+.panelcolor1{color:#dea32c;}
+.HDDcolor1{color:#e0861a;}
+.SSDcolor1{color:#decb00;}
+.CDcolor1{color:#65c294;}
+.videoCcolor1{color:#228fbd;}
+
+
+.cpucolor{color:#d64f44;border-color: #d64f44;box-shadow: 0px 0px 4px #d64f44;}
+.powercolor{color:#843900;border-color: #843900;box-shadow: 0px 0px 4px #843900;}
+.RAMcolor{color:#769149;border-color: #769149;box-shadow: 0px 0px 4px #769149;}
+.fancolor{color:#8552a1;border-color: #8552a1;box-shadow: 0px 0px 4px #8552a1;}
+.panelcolor{color:#dea32c;border-color: #dea32c;box-shadow: 0px 0px 4px #dea32c;}
+.HDDcolor{color:#e0861a;border-color: #e0861a;box-shadow: 0px 0px 4px #e0861a;}
+.SSDcolor{color:#decb00;border-color: #decb00;box-shadow: 0px 0px 4px #decb00;}
+.CDcolor{color:#65c294;border-color: #65c294;box-shadow: 0px 0px 4px #65c294;}
+.videoCcolor{color:#228fbd;border-color: #228fbd;box-shadow: 0px 0px 4px #228fbd;}
+
+button{
+    padding:6px;
+    margin:5px 2px;
+}
