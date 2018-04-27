@@ -1,13 +1,23 @@
 package om.thing;
 
 public class student {
-    public String name;
-    public String stuid;
-    public String age;
     public String gender;
+    public String stuid;
+    public String name;
+    public String age;
 
-    public student(String stuid, String name, String age, String gender) {
+    public  student(){
+         super();
     }
+
+    public  student(String a,String b,String c,String d){
+
+        this.gender=a;
+        this.stuid=b;
+        this.age=c;
+        this.name=d;
+    }
+
 
     public String getName() {
         return name;
@@ -45,14 +55,5 @@ public class student {
     public String toString() {
         return super.toString();
     }
-
-    public void studemt(String name,String stuid,String age,String gender){
-        this.name=name;
-        this.stuid=stuid;
-        this.age=age;
-        this.gender=gender;
     }
-    public void student(){
 
-    }
-}

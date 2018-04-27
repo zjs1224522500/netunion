@@ -21,7 +21,7 @@ public class studentimpl implements studentDAO {
         runner.update(JDBC.getConnection(),sql,s.getStuid(),s.getName(),s.getAge(),s.getGender());
     }
     public void delete(String stuid)throws SQLException{
-        String sql="delete from student where stuzxid=?";
+        String sql="delete from student where stuid=?";
         runner.update(JDBC.getConnection(),sql,stuid);
     }
     public void update(student s)throws SQLException{
@@ -29,14 +29,14 @@ public class studentimpl implements studentDAO {
         runner.update(JDBC.getConnection(),sql,s.getStuid(),s.getName(),s.getAge(),s.getGender());
     }
     public student findbyid(String stuid)throws SQLException{
-        String sql="select name,age,gender from studnent where stuid=?";
+        String sql="select name,age,gender,stuid from student where stuid=?";
         student s=runner.query(JDBC.getConnection(),sql,new BeanHandler<student>(student.class),stuid);
         return s;
     }
     public List<student> findall()throws SQLException{
-        String sql="select name age,gender from student";
-        List<student> studnets=runner.query(JDBC.getConnection(),sql,new BeanListHandler<student>(student.class));
-        return studnets;
+        String sql="select gender,stuid,name,age from student";
+        List<student> students=(List)runner.query(JDBC.getConnection(),sql,new BeanListHandler<student>(student.class));
+        return students;
     }
     public int personCount()throws SQLException{
         String sql="select count(stuid) from student";

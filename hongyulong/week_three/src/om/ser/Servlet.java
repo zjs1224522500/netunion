@@ -22,27 +22,32 @@ public class Servlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)throws ServletException,IOException{
        doPost(req, resp);
-   }
+       }
    protected void doPost(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException{
+        req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
         String method=req.getParameter("method");
-        if("findall".equals(method)){
+       if("findall".equals(method)){
             findall(req, resp);;
         }else if("find".equals(method)){
             find(req, resp);
         }else if("update".equals(method)){
             update(req, resp);
         }else if("add".equals(method)){
+                System.out.print("add");
             add(req, resp);
         }else if("delete".equals(method)){
             delete(req, resp);
         }
    }
+   //业务逻辑
+
     protected void add(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException{
         String name=req.getParameter("name");
         String stuid=req.getParameter("stuid");
-        String gender=req.getParameter("gender");
+        String gender= req.getParameter("gender");
         String age=req.getParameter("age");
-        student stu=new student(stuid,name,age,gender);
+        student stu=new student(name,stuid,age,gender);
         studentDAO dao = new studentimpl();
         try {
             dao.add(stu);
@@ -57,7 +62,7 @@ public class Servlet extends HttpServlet {
         try {
             dao.delete(stuid);
             resp.sendRedirect(req.getContextPath()+"/student?method=findall");
-        } catch (SQLException e) {
+            } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -85,10 +90,12 @@ public class Servlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }protected void findall(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException{
+    }
+    protected void findall(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException{
         studentDAO dao= new studentimpl();
         try {
             List<student> list =dao.findall();
+            req.setAttribute("list",list);
             req.getRequestDispatcher("list.jsp").forward(req,resp);
         } catch (SQLException e) {
             e.printStackTrace();
