@@ -11,8 +11,9 @@
     <title>首页</title>
   </head>
   <body>
-  <a href="/student?method=findall">
+  <a href="student?method=findall">
     查看所有人的基本信息
   </a>
+
   </body>
 </html>
