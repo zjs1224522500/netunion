@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class JDBC {
     public final static String driver = "com.mysql.jdbc.Driver";
-    public final static String url = "jdbc:mysql://localhost:3306/studnet?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false";
+    public final static String url = "jdbc:mysql://localhost:3306/studnet";
     public final static String user = "root";
     public final static String password = "hyl2hr1314";
 
@@ -12,7 +12,7 @@ public class JDBC {
     static{
         try {
             Class.forName(driver);
-            System.out.print("asdfaf");
+            System.out.print("连接成功");
         } catch (Exception var7) {
             var7.printStackTrace();
         }
