@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>PCDIY</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="col-lg-2 col-md-2">
+        <ul>
+            <li class="cpucolor1"><i>CPU</i><b>——</b></li>
+            <li class="powercolor1"><i>POWER</i><b>——</b></li>
+            <li class="RAMcolor1"><i>RAM</i><b>——</b></li>
+            <li class="fancolor1"><i>FAN</i><b>——</b></li>
+            <li class="panelcolor1"><i>PANEL</i><b>——</b></li>
+            <li class="HDDcolor1"><i>HDD</i><b>——</b></li>
+            <li class="SSDcolor1"><i>SSD</i><b>——</b></li>
+            <li class="CDcolor1"><i>CD</i><b>——</b></li>
+            <li class="videoCcolor1"><i>VIDEOC</i><b>——</b></li>
+        </ul>
+        <br><br><br><br><br><br><br><br>
+        <button class="btn btn-success" id="get1">选好了</button>
+        <button class="btn btn-success" id="get_map">门店支持</button>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-md-6">
+        <div class="PC">
+            <div id="cpu_container"></div>
+            <div id="power_container"></div>
+            <div id="RAM_container"></div>
+            <div id="fan_container"></div>
+            <div id="panel_container"></div>
+            <div id="HDD_container"></div>
+            <div id="SSD_container"></div>
+            <div id="CD_container"></div>
+            <div id="videoC_container"></div>
+        </div>
+        <hr/>
+        <h4>已选择的配件 ▲</h4>
+
+    </div>
+    <div class="col-lg-4 col-sm-6 col-md-6">
+        <ul id="product">
+
+        </ul>
+        <button class="btn btn-success"  id="before">before</button>
+        <button class="btn btn-success" id="next">next</button>
+    </div>
+</div>
+<div style="" id="show">
+    <div id="print_value">
+        <table class="table table-bordered" border="1" width="100%" height="100%">
+            <tr>
+                <th width="30%">类别</th>
+                <th width="70%">型号</th>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td id="CPU_t"></td>
+            </tr>
+            <tr>
+                <td>POWER</td>
+                <td id="POWER_t"></td>
+            </tr>
+            <tr>
+                <td>FAN</td>
+                <td id="FAN_t"></td>
+            </tr>
+            <tr>
+                <td>HDD</td>
+                <td id="HDD_t"></td>
+            </tr>
+            <tr>
+                <td>SSD</td>
+                <td id="SSD_t"></td>
+            </tr>
+            <tr>
+                <td>VIDEOC</td>
+                <td id="VIDEOC_t"></td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td id="RAM_t"></td>
+            </tr>
+            <tr>
+                <td>PANEL</td>
+                <td id="PANEL_t"></td>
+            </tr>
+            <tr>
+                <td>CD</td>
+                <td id="CD_t"></td>
+            </tr>
+            <tr>
+                <td>总价</td>
+                <td id="product_sum"></td>
+            </tr>
+        </table>
+        <div id="AfterSale">
+            <p>联系电话：16666666</p>
+            <p>邮箱：5684@123.com</p>
+        </div>
+    </div>
+
+    <hr>
+    <button class="btn btn-default" id="close">关闭</button>
+    <button class="btn btn-success" id="print">打印</button>
+</div>
+
+<!-- map -->
+<div id="Map_Div">
+    <div id="Map_Chile"><iframe id="map" src="http://uri.amap.com/marker?markers=104.092957,30.712999|104.095619,30.70724|104.095752,30.709446|104.059136,30.774004&src=mypage&coordinate=gaode&callnative=1"></iframe>
+    </div>
+    <button class="btn btn-danger btn-sm" id="close_map">关闭</button>
+</div>
+
+<div id="curtain">
+    <img class="oImg" src="img/loading2.gif" alt="PCDIT">
+</div>
+
+</body>
+<script src="js/index.js" type="text/javascript"></script>
+<!--<script src="js/getData.js"></script>-->
+</html>
