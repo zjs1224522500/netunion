@@ -6,7 +6,6 @@ class expression{
     {
         int flag1;
         for(flag1=a.length-2;flag1>0&a[flag1]==' ';flag1--){ }
-        System.out.print(flag1+"\n"+(a.length-flag1-2)+"\n");
         a[flag1+1]=a[a.length-1];
         for(int i=flag1+2;i<a.length;i++)
         {
@@ -17,7 +16,6 @@ class expression{
     {
         int flag1,flag2;
         for(flag1=1;flag1<a.length&a[flag1]==' ';flag1++){ }
-        System.out.print((flag1-1)+"\n");
         for( flag2=1;flag2<(a.length-flag1+1);flag2++)
         {
             a[flag2]=a[flag2+flag1-1];
