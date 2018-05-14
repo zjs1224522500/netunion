@@ -57,10 +57,19 @@ window.onload = function () {
         if(b){
             var SendData = "username="+usernameObj.value+"&password="+passwordObj.value+"&phonenumber="+phonenumberObj.value+"&e-mail="+emailObj.value+"";
             SendDataAjax(SendData);
-            alert("注册应该成功了……")
+            alert("应该是注册成功了……")
             //location.href = "login.html"
         }
     }
+
+
+    // 打字提示效果
+    var Tipstext = "Tips!<br /><br/>1.不能以特殊字符或数字开头哦！<br />2." +
+        "账户或密码都必须在6~12之间哦！" +
+        "<br />3.可以关注我们的公众号:" +
+        "<br><img src='img//1.jpg'><br/>" +
+        "<b>非常感谢您注册我们的网站，<br/>欢迎您常来！</b>";
+    WriteWord(Tipstext)
 }
 
 // 发送注册数据
@@ -127,5 +136,39 @@ function isExistUser(usernameStr){
     }
 
 }
+
+
+function WriteWord(Tipstext){
+
+    // 定义一个变量 n
+    var n = 0;
+    // 获取文字长度
+    var l = Tipstext.length;
+    // 定义一个打字方法
+    function writing() {
+        // 获取容器
+        var box = document.getElementById("LeftTips");
+        // 将文字内容放入容器
+        box.innerHTML = Tipstext.slice(0,n) + "_";
+        if(n > l){
+            box.innerHTML = Tipstext;
+            return
+        }
+
+        // 让 n 增加，来得到打字的效果
+        n = n+1;
+        console.log(n)
+        // 定时器 1毫秒执行一次
+        var v = setTimeout(function(){
+            writing()
+        },30);
+    }
+    writing()
+}
+
+
+
+
+
 
 
